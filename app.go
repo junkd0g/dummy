@@ -30,7 +30,7 @@ func Middleware(w http.ResponseWriter, r *http.Request) {
 	byteValue, _ := ioutil.ReadAll(jsonFile)
 	//var data interface{}
 	//json.Unmarshal(byteValue, &data)
-	w.WriteHeader(400)
+	w.WriteHeader(200)
 	w.Write(byteValue)
 
 }
